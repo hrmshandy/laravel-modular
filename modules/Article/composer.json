@@ -1,0 +1,15 @@
+{
+    "name": "codelabs/article",
+    "description": "",
+    "authors": [
+        {
+            "name": "Shandy Hermawan",
+            "email": "hrm.shandy05@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Modules\\Article\\": ""
+        }
+    }
+}
