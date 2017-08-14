@@ -23,7 +23,7 @@ class ArticleServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'Modules\Http\Controllers';
+    protected $namespace = 'Modules\Article\Http\Controllers';
 
     /**
      * Boot the application events.
@@ -107,9 +107,10 @@ class ArticleServiceProvider extends ServiceProvider
     public function registerRoutes()
     {
         $routesPath = __DIR__.'/../routes.php';
-        
+
         Route::middleware('web')
              ->namespace($this->namespace)
+             ->prefix('article')
              ->group($routesPath);
     }
 
